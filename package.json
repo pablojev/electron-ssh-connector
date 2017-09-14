@@ -1,0 +1,23 @@
+{
+  "name": "jscommander",
+  "version": "1.0.0",
+  "description": "A js-ssh-commander for Mac.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://gitlab.com/pablojev/jsCommander/",
+  "keywords": [
+    "Commander"
+  ],
+  "author": "pablojev",
+  "license": "gpl",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "ssh2": "^0.5.4",
+    "typescript": "^2.4.2"
+  }
+}

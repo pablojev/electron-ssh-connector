@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery File Tree Demo</title>
+		<meta charset="utf-8" />
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+		<script>
+      let $ = require('jquery');
+      mainWindow.$ = $;
+    </script>
+	</head>
+	<body>
+      <div class="settings">
+        <span class="connectInputs">
+          <input type="text" id="host" value="ferajna.org" />
+          <input type="text" id="login" value="palo" />
+          <input type="password" id="password" value="fewkes89" />
+          <input type="text" id="port" value=220 />
+          <button class="connect">Połącz</button>
+        </span>
+        <span class="connectedInputs">
+            <label for="pwd">pwd: </label><input type="text" id="pwd" />
+            <button href="#" class="getPath">Przejdź</button>
+            <button class="disconnect">Rozłącz</button>
+        </span>
+      </div>
+      <div class="windows noSelect">
+        <div class="left">
+          <div class="output"></div>
+        </div>
+        <div class="right">asd</div>
+        <br clear="both" />
+      </div>
+      <div class="settings">
+        ustawienia
+      </div>
+      <script>
+      $(document).ready(function() {
+          require('./js/sshConnector.js');
+          require('./js/ui.js');
+      });
+	    </script>
+	</body>
+</html>
